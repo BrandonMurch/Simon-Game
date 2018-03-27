@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Contact: Brandon.Murch@protonmail.com -->
+    <meta name="author" content="Brandon Murch">
+    <meta name="description" content="An interactive game of Simon">
+    <meta charset="utf-8">
+    <title>Simon, Now In Space!</title>
+    <link rel="stylesheet" href="Simon.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="Simon.js" type="text/javascript"></script>
+  </head>
+  <body class="background">
+    <section class="gameBoard">
+      <div class="outerCircle outerCircle--topLeft">
+        <div class="outerCircle__cone outerCircle__cone--green"></div>
+      </div>
+      <div class="outerCircle outerCircle--topRight">
+        <div class="outerCircle__cone outerCircle__cone--red"></div>
+      </div>
+      <div class="outerCircle outerCircle--bottomLeft">
+        <div class="outerCircle__cone outerCircle__cone--yellow"></div>
+      </div>
+      <div class="outerCircle outerCircle--bottomRight">
+        <div class="outerCircle__cone outerCircle__cone--blue"></div>
+      </div>
+    </section>
+    <section class="innerCircle background">
+      <div class="innerCircle__list innerCircle__list--startButton">
+        <h1 class = "innerCircle__listText--big">START</h1>
+      </div>
+      <div class="innerCircle__list innerCircle__list--resetButton">
+        <h1 class = "innerCircle__listText--big">RESET</h1>
+      </div>
+      <div class="innerCircle__list innerCircle__list--display">
+        <h1 class="innerCircle__displayText innerCircle__listText--big">- -</h1>
+      </div>
+      <div class="innerCircle__roundButton innerCircle__roundButton--red">
+        <i class="fa fa-exclamation"></i>
+      </div>
+    </section>
+
+  </body>
+</html>

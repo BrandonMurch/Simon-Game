@@ -1,0 +1,192 @@
+/*
+
+This document is written in BEM.
+Block = .block
+Element = .block__element
+Modifier = .block__element--modifier || .block--modifier
+
+*/
+
+/* Block ******************************************************************/
+.background {
+  background-image: url(https://s20.postimg.org/8my4wuu19/light-abstract-glowing-sky-night-star-977986-pxhere.com-min.jpg);
+  background-size: cover;
+}
+
+.gameBoard {
+  height: auto;
+  max-height: 1000px;
+  width: auto;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.outerCircle {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.innerCircle {
+  height: 35vw;
+  width: 35vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 500px;
+}
+
+/* Element ****************************************************************/
+
+.outerCircle__cone {
+width: 0;
+height: 0;
+position: absolute;
+border-left: 24vw solid transparent;
+border-right: 24vw solid transparent;
+-webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+        border-radius: 50%;
+z-index: 2;
+}
+
+.innerCircle__list{
+  width: 40%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.innerCircle__roundButton {
+  height: 8vw;
+  width: 8vw;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  border-radius: 100px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+
+/* Modifier ***************************************************************/
+
+.outerCircle--topLeft{
+  top: 0;
+  left: 0;
+}
+
+.outerCircle--topRight{
+  top: 0;
+  right: 0;
+}
+
+.outerCircle--bottomLeft{
+  bottom: 0;
+  left: 0;
+}
+
+.outerCircle--bottomRight{
+  bottom: 0;
+  right: 0;
+}
+.outerCircle__cone--green {
+  transform: rotate(-45deg);
+  border-top: 24vw solid rgba(0,201,87,0.85);
+  color: green;
+  right: 0;
+  bottom: 0;
+  margin-right: -12vw;
+  cursor: pointer;
+}
+
+.outerCircle__cone--greenFlash {
+  border-top: 24vw solid rgba(20,210,100,1) !important;
+}
+
+.outerCircle__cone--red {
+  transform: rotate(45deg);
+  border-top: 24vw solid rgba(250,27,48,0.85);
+  left: 0;
+  bottom: 0;
+  margin-left: -12vw;
+  cursor: pointer;
+}
+
+.outerCircle__cone--redFlash {
+  border-top: 24vw solid rgba(250,40,70,1) !important;
+}
+
+.outerCircle__cone--yellow {
+  transform: rotate(-135deg);
+  border-top: 24vw solid rgba(255,191,0,0.85);
+  right: 0;
+  top: 0;
+  margin-right: -12vw;
+  cursor: pointer;
+}
+
+.outerCircle__cone--yellowFlash {
+  border-top: 24vw solid rgba(255,200,40,1) !important;
+}
+
+.outerCircle__cone--blue {
+  transform: rotate(135deg);
+  border-top: 24vw solid rgba(15,82,186,0.85);
+  left: 0;
+  top: 0;
+  margin-left: -12vw;
+  cursor: pointer;
+}
+
+.outerCircle__cone--blueFlash{
+  border-top: 24vw solid rgba(15,82,210,1) !important;
+}
+
+.innerCircle__listText--big {
+  font-size: 32px;
+}
+
+.innerCircle__list--startButton {
+  top: 10%;
+  cursor: pointer;
+}
+
+.innerCircle__list--resetButton {
+  top: 30%;
+  cursor: pointer;
+}
+
+.innerCircle__list--display {
+  width: 60% !important;
+  bottom: 30%;
+}
+
+.innerCircle__roundButton--red {
+  background-color: red;
+  border: solid 2px black;
+}
+
+.innerCircle__roundButton--toggled {
+  -webkit-box-shadow: inset 0 0 20px #FFF;
+     -moz-box-shadow: inset 0 0 20px #FFF;
+          box-shadow: inset 0 0 20px #FFF;
+  color: white;
+}
+
+.fa-exclamation {
+  margin-top: 25%;
+  height: 100%;
+  width: 100%;
+  font-size: 80px !important;
+  color: inherit;
+}
